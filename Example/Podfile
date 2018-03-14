@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RMGooglePlacesPhotosUtil_Example' do
+  pod 'RMGooglePlacesPhotosUtil', :path => '../'
+
+  target 'RMGooglePlacesPhotosUtil_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
