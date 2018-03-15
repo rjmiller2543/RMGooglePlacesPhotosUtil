@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RMGooglePlacesPhotosUtil'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of RMGooglePlacesPhotosUtil.'
+  s.summary          = 'Gets a Photo from Google Places Web API'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -30,7 +30,9 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'RMGooglePlacesPhotosUtil/Classes/**/*'
+ # s.source_files = 'RMGooglePlacesPhotosUtil/Classes/**/*'
+
+  s.source_files = 'RMGooglePlacesPhotosUtil/**/*'
   
   # s.resource_bundles = {
   #   'RMGooglePlacesPhotosUtil' => ['RMGooglePlacesPhotosUtil/Assets/*.png']

@@ -1,0 +1,16 @@
+PODS:
+  - RMGooglePlacesPhotosUtil (0.1.0)
+
+DEPENDENCIES:
+  - RMGooglePlacesPhotosUtil (from `../`)
+
+EXTERNAL SOURCES:
+  RMGooglePlacesPhotosUtil:
+    :path: ../
+
+SPEC CHECKSUMS:
+  RMGooglePlacesPhotosUtil: f22826568ca193a1fc49827a89d24839ffbd38ab
+
+PODFILE CHECKSUM: 5686baec6b4aad84bc1858e6f4681da6d9e259ee
+
+COCOAPODS: 1.4.0

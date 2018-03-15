@@ -10,4 +10,6 @@
 
 @interface RMGViewController : UIViewController
 
+@property(nonatomic,weak) IBOutlet UIImageView *imageView;
+
 @end

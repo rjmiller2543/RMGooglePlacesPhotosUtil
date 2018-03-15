@@ -7,6 +7,7 @@
 //
 
 #import "RMGViewController.h"
+#import <RMGooglePlacesPhotosUtil/RMGooglePlacesPhotosUtil.h>
 
 @interface RMGViewController ()
 
@@ -18,6 +19,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    RMGooglePlacesPhotosUtil *util = [[RMGooglePlacesPhotosUtil alloc] initWithApiKey:@"AIzaSyAAc3iUQR2KTQg8_nnRCNs2DXkJen2siVE"];
+    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(37.7414382, -119.6022289);
+    [util getImageWithLocation:coordinate type:@"park" name:@"Yosemite Falls Trailhead" callback:^(NSError *error, UIImage *image) {
+        if (error) {
+            NSLog(@"Error: %@", error);
+        } else {
+            [self.imageView setImage:image];
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning

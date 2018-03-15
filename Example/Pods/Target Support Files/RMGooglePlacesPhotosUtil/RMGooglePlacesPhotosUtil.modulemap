@@ -1,0 +1,6 @@
+framework module RMGooglePlacesPhotosUtil {
+  umbrella header "RMGooglePlacesPhotosUtil-umbrella.h"
+
+  export *
+  module * { export * }
+}
